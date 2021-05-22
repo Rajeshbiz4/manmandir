@@ -1,17 +1,14 @@
 import logo from './logo.svg';
-// import './App.scss';
-// import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 import React from 'react';
 import {connect} from "react-redux";
 import { bindActionCreators } from 'redux';
-import { fetchPost } from "./postaction";
+import { fetchPost } from "./actions/postaction";
 
 
 class App extends React.Component {
 
   componentDidMount () {
-    console.log("------------");
     this.props.fetchPost();
   }
 
@@ -21,7 +18,6 @@ class App extends React.Component {
     <div className="App">
      Redux  
     { this.props.data.loading ? <div>loading ......</div> : <div>Result</div>}
-    
     </div>
   
   );

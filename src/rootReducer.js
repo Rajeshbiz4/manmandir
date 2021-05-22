@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import QuestionReducer from "./QuestionReducer";
+import QuestionReducer from "./Reducers/QuestionReducer";
 
 
 export default combineReducers({

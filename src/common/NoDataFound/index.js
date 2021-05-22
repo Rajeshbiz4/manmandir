@@ -10,6 +10,7 @@ NoDataFound.propTypes = {
   className: PropTypes.string,
   style: PropTypes.object
 }
+
 NoDataFound.defaultProps = {
   message: '',
   className: '',
