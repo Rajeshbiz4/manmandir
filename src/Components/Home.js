@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sass.scss';
-import Logo from "./man.png"
+import Logo from "./../assets/Images/man.png"
 
 class Home extends React.Component {
     constructor() {

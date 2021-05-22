@@ -1,7 +1,6 @@
 
 import React from "react"
-import Logo from "./Images/man.png"
-
+import Logo from "./../assets/Images/man.png"
 class LogoComponent extends React.Component
 {
     constructor()

@@ -6,9 +6,9 @@ import {connect} from "react-redux";
 import { bindActionCreators } from 'redux';
 // import { fetchPost } from "./postaction";
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import Home from './Home';
-import About from './About';
-import Navbar from "./Navbar";
+import Home from './components/Home';
+import About from './components/About';
+import Navbar from "./components/Navbar";
 import LogoComponent from './components/LogoComponents';
 import CardComponents from './components/CardComponents';
 

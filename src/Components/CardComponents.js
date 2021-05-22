@@ -1,6 +1,6 @@
 
 import React from "react"
-import Logo from "./Images/mandir.jpg"
+import Logo from "./../assets/Images/mandir.jpg"
  import './Sass.scss';
 
 

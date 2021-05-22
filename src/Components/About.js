@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './Home';
 import { Link } from 'react-router-dom';
 import './Sass.scss';
-import Logo from "./man.png"
+import Logo from "./../assets/Images/man.png"
 class About extends React.Component {
     constructor() {
         super()
