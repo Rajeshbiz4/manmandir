@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Sass.scss';
 import Logo from "./../assets/Images/man.png"
 
-class Home extends React.Component {
+class Login extends React.Component {
     constructor() {
         super()
     }
@@ -55,4 +55,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default Login;

@@ -21,11 +21,11 @@ constructor(){
                   <FaUser style={{marginTop:'24%',marginLeft:'1340%'}}>
                   </FaUser>
                   <br/>
-                <NavLink className="nav-link" exact to ="/Home"  style={{marginLeft:'1360%',marginTop:'-55%',color:'white'}}>Login</NavLink>
+                <NavLink className="nav-link" exact to ="/login"  style={{marginLeft:'1360%',marginTop:'-55%',color:'white'}}>Login</NavLink>
               </li>
               <span class="dash-separator login-signup-separator" style={{marginTop:'0.8%',marginLeft:'750px'}}> | </span>
                <li className="nav-item">
-               <NavLink className="nav-link" exact to ="/About" style={{color:'white'}} >Sign Up</NavLink>
+               <NavLink className="nav-link" exact to ="/signup" style={{color:'white'}} >Sign Up</NavLink>
               </li>&nbsp;&nbsp;&nbsp;&nbsp;
               <FaCartPlus style={{marginTop:'1.5%'}}></FaCartPlus>
                

@@ -6,11 +6,12 @@ import {connect} from "react-redux";
 import { bindActionCreators } from 'redux';
 // import { fetchPost } from "./postaction";
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import Home from './components/Home';
-import About from './components/About';
+import Login from './components/login';
+import Signup from './components/Signup';
 import Navbar from "./components/Navbar";
 import LogoComponent from './components/LogoComponents';
 import CardComponents from './components/CardComponents';
+import HomeContainer from "./containers/HomeContainer";
 
 
 // class App extends React.Component {
@@ -52,14 +53,13 @@ import CardComponents from './components/CardComponents';
           <Router>
 <Navbar/>
 <Switch>
-  
-<Route exact path="/home" component={Home}/>
-<Route exact path="/about" component={About}/>
-
+<Route exact path="/" component={HomeContainer}/>
+<Route exact path="/login" component={Login}/>
+<Route exact path="/signup" component={Signup}/>
 </Switch>
        </Router>
-       <LogoComponent/>
-       <CardComponents/>
+       
+      
 
         </div>
       );

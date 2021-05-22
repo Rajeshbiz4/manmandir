@@ -1,9 +1,10 @@
 import React from 'react';
-import Home from './Home';
+import Home from './login';
 import { Link } from 'react-router-dom';
 import './Sass.scss';
 import Logo from "./../assets/Images/man.png"
-class About extends React.Component {
+
+class Signup extends React.Component {
     constructor() {
         super()
     }
@@ -46,5 +47,5 @@ class About extends React.Component {
         )
     }
 }
-export default About;
+export default Signup;
 
