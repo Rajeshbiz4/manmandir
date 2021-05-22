@@ -28,6 +28,7 @@ constructor(){
                <NavLink className="nav-link" exact to ="/About" style={{color:'white'}} >Sign Up</NavLink>
               </li>&nbsp;&nbsp;&nbsp;&nbsp;
               <FaCartPlus style={{marginTop:'1.5%'}}></FaCartPlus>
+               
                 </ul>
               </div>
               </div>
