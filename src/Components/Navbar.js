@@ -11,10 +11,6 @@ constructor(){
     render(){
        return (
       <div>
-
-      
-
-
       
           {
             <nav className="navbar navbar-expand-sm  text-white bg-primary" style={{padding:'1px 1px',height:'30px'}}>
