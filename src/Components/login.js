@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Sass.scss';
+import '../styles/login.scss';
 import Logo from "./../assets/Images/man.png"
 
 class Login extends React.Component {
@@ -37,12 +37,12 @@ class Login extends React.Component {
                                     <div className="col-lg-7 my-3 p-2" />
                                     <button className="btnlogin">Login In</button>
                                 </div>
-                                <div>__________________OR________________</div>
+                                <div>___________________________OR_________________________</div>
                                 <div className="col-lg-7 my-3 p-2">
                                     <button className="btn">Login With OTP</button>
                                 </div>
-                                {/* <Link to='/'>Home</Link> */}
-                                <Link to="/About" class="a"> Dont have an account? Sign Up</Link>
+                                
+                                <Link to="/signup" class="a"> Dont have an account? Sign Up</Link>
 
                             </form>
                         </div>

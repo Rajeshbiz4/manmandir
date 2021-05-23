@@ -6,11 +6,11 @@ import {connect} from "react-redux";
 import { bindActionCreators } from 'redux';
 // import { fetchPost } from "./postaction";
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import Login from './components/login';
-import Signup from './components/Signup';
-import Navbar from "./components/Navbar";
-import LogoComponent from './components/LogoComponents';
-import CardComponents from './components/CardComponents';
+import Login from './Components/login';
+import Signup from './Components/Signup';
+import Navbar from "./Components/Navbar";
+import LogoComponent from './Components/LogoComponents';
+import CardComponents from './Components/CardComponents';
 import HomeContainer from "./containers/HomeContainer";
 
 

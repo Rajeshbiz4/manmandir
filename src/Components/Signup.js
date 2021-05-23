@@ -1,7 +1,7 @@
 import React from 'react';
-import Home from './login';
+// import Home from './login';
 import { Link } from 'react-router-dom';
-import './Sass.scss';
+import '../styles/signup.scss';
 import Logo from "./../assets/Images/man.png"
 
 class Signup extends React.Component {
@@ -35,7 +35,7 @@ class Signup extends React.Component {
                                     <button className="btnsign">Continue</button>
                                 </div>
                                
-                                <Link to="/Home" class="asign"> Existing User? Log In</Link>
+                                <Link to="/login" class="asign"> Existing User? Log In</Link>
 
                             </form>
                         </div>

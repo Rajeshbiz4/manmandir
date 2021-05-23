@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link,NavLink} from 'react-router-dom';
 import {FaPhoneAlt,FaUser,FaEnvelope,FaCartPlus} from "react-icons/fa";
+// import '../styles/header.scss';
 
 class Navbar extends React.Component {
 constructor(){
@@ -10,6 +11,8 @@ constructor(){
     render(){
        return (
       <div>
+
+      
           {
             <nav className="navbar navbar-expand-sm  text-white bg-primary" style={{padding:'1px 1px',height:'30px'}}>
              <div  className="container-fluid">
