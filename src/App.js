@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './styles/App.css';
 import React from 'react';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-import {connect} from "react-redux";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 // import { fetchPost } from "./postaction";
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
@@ -16,6 +16,7 @@ import OurPurpose from './Components/OurPurpose';
 import ContactUs from './Components/ContactUs';
 import Navbar from './Components/Navbar';
 import HeaderComponent from './Components/HeaderComponents';
+import MobileNumber from './Components/MobileNumber';
 
 
 // class App extends React.Component {
@@ -31,9 +32,9 @@ import HeaderComponent from './Components/HeaderComponents';
 //     <div className="App">
 //      Redux  
 //     { this.props.data.loading ? <div>loading ......</div> : <div>Result</div>}
-    
+
 //     </div>
-  
+
 //   );
 //   }
 // }
@@ -50,28 +51,29 @@ import HeaderComponent from './Components/HeaderComponents';
 // }
 
 // export default connect(mapStatetoProps,mapDispacthToProps)(App);
- 
-    function App() {
-      return (
-        <div>
-          <Router>
-<HeaderComponent/>
-<LogoComponent/>
-<Navbar/>
-<CardComponents/>
-<AboutYourSelf/>
-<OurPurpose/>
-<ContactUs/>
-<Switch>
-<Route exact path="/login" component={Login}/>
-<Route exact path="/signup" component={Signup}/>
-</Switch>
-       </Router>
-       
-      
 
-        </div>
-      );
-    }
- 
- export default App;
+function App() {
+  return (
+    <div>
+      <Router>
+        <HeaderComponent />
+        <Switch>
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={Signup} />
+          <Route path="/MobileNumber" component={MobileNumber}/>
+        </Switch>
+        <LogoComponent />
+        <Navbar />
+        <CardComponents />
+        <AboutYourSelf />
+        <OurPurpose />
+        <ContactUs />
+      </Router>
+
+
+
+    </div>
+  );
+}
+
+export default App;

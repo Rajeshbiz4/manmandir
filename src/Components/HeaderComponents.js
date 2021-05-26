@@ -13,7 +13,7 @@ class HeaderComponent extends React.Component {
           {
             <nav className="navbar navbar-expand-sm  text-light bg-primary" style={{padding:'1px 1px',height:'30px'}}>
              <div  className="container-fluid">
-             <FaPhoneAlt className="phone"></FaPhoneAlt><div className="navbar-brand">+91-9730028231</div>
+             <FaPhoneAlt className="phone"></FaPhoneAlt><div className="navbar-brand"><Link to="/MobileNumber">Moblile Number</Link></div>
               <div className="collapse navbar-collapse" id="navbarNav">
               <FaEnvelope className="envelope"></FaEnvelope>&nbsp;&nbsp;<div className="navbar-brand">manmandir@gmail.com</div>
                 <ul className="navbar-nav mr-auto">

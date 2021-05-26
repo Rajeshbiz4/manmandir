@@ -28,9 +28,9 @@ class Login extends React.Component {
                                     </div>
                                 </div>
                                 <div className="form-row">
-                                <div className="col-lg-7">
-                                    <input type="password" class="form-control my-4 p-2" placeholder="PASSWORD" required />
-                                </div>
+                                    <div className="col-lg-7">
+                                        <input type="password" class="form-control my-4 p-2" placeholder="PASSWORD" required />
+                                    </div>
                                 </div>
                                 <a href="#" className="forgot">Forgot</a>
                                 <div className="form-row">
@@ -42,8 +42,8 @@ class Login extends React.Component {
                                     <button className="btn">Login With OTP</button>
                                 </div>
                                 <div>
-                                <Link to="/signup" className="a"> Dont have an account? Sign Up</Link>
-                                 </div>
+                                    <Link to="/signup" className="a"> Dont have an account? Sign Up</Link>
+                                </div>
                             </form>
                         </div>
                     </div>
