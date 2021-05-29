@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './styles/App.css';
 import React from 'react';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-import {connect} from "react-redux";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 // import { fetchPost } from "./postaction";
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
@@ -31,9 +31,9 @@ import MobileNumber from './Components/MobileNumber';
 //     <div className="App">
 //      Redux  
 //     { this.props.data.loading ? <div>loading ......</div> : <div>Result</div>}
-    
+
 //     </div>
-  
+
 //   );
 //   }
 // }

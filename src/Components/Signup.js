@@ -1,7 +1,5 @@
 import React from 'react';
-import Home from './login';
 import { Link } from 'react-router-dom';
-
 import '../styles/signup.scss';
 import Logo from "./../assets/Images/man.png"
 

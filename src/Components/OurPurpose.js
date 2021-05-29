@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ourPurpose.scss';
+import '../styles/ourpurpose.scss';
 
 export default class OurPurpose extends React.Component {
     constructor() {

@@ -20,7 +20,6 @@ export default class ContactUs extends React.Component {
   </blockquote>
 </div>
 
-
         </div>
         )
     }
