@@ -17,6 +17,8 @@ import ContactUs from './Components/ContactUs';
 import Navbar from './Components/Navbar';
 import HeaderComponent from './Components/HeaderComponents';
 import MobileNumber from './Components/MobileNumber';
+import CardImageMap from './Components/CardImageMap';
+import FooterComponents from './Components/FooterComponents';
 
 
 // class App extends React.Component {
@@ -56,6 +58,7 @@ function App() {
   return (
     <div>
       <Router>
+        <CardImageMap/>
         <HeaderComponent />
         <Switch>
           <Route exact path="/login" component={Login} />
@@ -64,11 +67,11 @@ function App() {
         </Switch>
         <LogoComponent />
         <Navbar />
-        <CardComponents />
-        <AboutYourSelf />
+        <AboutYourSelf/>
         <OurPurpose />
         <ContactUs />
-      </Router>
+        <FooterComponents/>
+      </Router >
 
 
 

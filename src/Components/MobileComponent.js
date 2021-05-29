@@ -13,17 +13,13 @@ class MobileComponent extends React.Component
     {
         console.log(this.props);
     }
-    // componentWillReceiveProps(nextprops)
-    // {
-    //     console.log(nextprops);
-    // }
     render()
     {
-        return(<div>
+        return( <div>
             <tr>
                   {this.props.data.map((item,index)=>
                  {
-                 return(<div key={index}>{item}</div>)
+                 return( <div key={index}>{item}</div>)
                  })}
                  </tr> 
              </div>)
