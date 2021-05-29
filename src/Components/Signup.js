@@ -1,4 +1,5 @@
 import React from 'react';
+// import Home from './login';
 import { Link } from 'react-router-dom';
 import '../styles/signup.scss';
 import Logo from "./../assets/Images/man.png"
@@ -44,13 +45,11 @@ export default class Signup extends React.Component {
 
 
                                 <div className="form-row">
-                                   
-                                    <div className="col-lg-7 my-1 p-2" />
-                                    <button className="btncontinue">Continue</button>
-                                </div><br/>
-
-                                
-                     <Link to="/login" className="existinglink"> Existing User? Log In</Link>
+                                    <div className="col-lg-7 my-3 p-2" />
+                                    <button className="btnsign">Continue</button>
+                                </div>
+                               
+                                <Link to="/login" class="asign"> Existing User? Log In</Link>
 
                             </form>
                         </div>
