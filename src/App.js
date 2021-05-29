@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 // import { fetchPost } from "./postaction";
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import Login from './Components/login';
+import Login from './Components/LoginComponents';
 import Signup from './Components/Signup';
 import LogoComponent from './Components/LogoComponents';
 import CardComponents from './Components/CardComponents';
@@ -17,6 +17,8 @@ import ContactUs from './Components/ContactUs';
 import Navbar from './Components/Navbar';
 import HeaderComponent from './Components/HeaderComponents';
 import MobileNumber from './Components/MobileNumber';
+import CardImageMap from './Components/CardImageMap';
+import FooterComponents from './Components/FooterComponents';
 
 
 // class App extends React.Component {
@@ -56,6 +58,7 @@ function App() {
   return (
     <div>
       <Router>
+        <CardImageMap/>
         <HeaderComponent />
         <Switch>
           <Route exact path="/login" component={Login} />
@@ -64,11 +67,11 @@ function App() {
         </Switch>
         <LogoComponent />
         <Navbar />
-        <CardComponents />
-        <AboutYourSelf />
+        <AboutYourSelf/>
         <OurPurpose />
         <ContactUs />
-      </Router>
+        <FooterComponents/>
+      </Router >
 
 
 

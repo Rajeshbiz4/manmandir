@@ -1,28 +1,36 @@
 
-import React from "react"
-import Logo from "./../assets/Images/mandir.jpg"
- import './Sass.scss';
+import React from 'react'
+//import logo from './../assets/Images/mandir.jpg';
+import CardImageMap from './CardImageMap'
 
-
-class CardComponents extends React.Component
+class CardComponent extends React.Component
 {
     constructor()
     {
         super()
+        this.state=
+        {
+          //  Mob:["../../../assets/Images/mandir."]
+          images :[{src:'./../assets/Images/man.png'}]
+            // { id: 1, src: './assets/Images/mandir.jpg', title: 'foo', description: 'bar' },
+            // { id: 2, src: './assets/Images/mandir.jpg', title: 'foo', description: 'bar' },
+            // { id: 3, src: './assets/Images/mandir.jpg', title: 'foo', description: 'bar' },
+            // { id: 4, src: './assets/Images/mandir.jpg', title: 'foo', description: 'bar' },
+            // { id: 5, src: './assets/Images/mandir.jpg', title: 'foo', description: 'bar' },
+        // ]
+        }
     }
+    
     render()
     {
-        return(
-
-        <div className='demo'>
-        
-            <img src={Logo} style={{height:'200px',width:'150px',marginTop:'5%' ,marginLeft:'10%'}} class="circle"></img>
-            <img src={Logo} style={{height:'200px',width:'150px',marginTop:'5%' ,marginLeft:'10%'}} class="circle"></img>
-            <img src={Logo} style={{height:'200px',width:'150px',marginTop:'5%' ,marginLeft:'10%'}} class="circle"></img>
-            <img src={Logo} style={{height:'200px',width:'150px',marginTop:'5%' ,marginLeft:'10%'}} class="circle"></img>
-            </div>
-        )
-            
+      console.log(this.state);
+        return(<div>
+                {/* <CardImageMap data={this.state.images} /> */}
+                {this.state.images.map((index,item)=>
+                {
+                  return(<img key={index} src={item.src} style={{height:'100%',width:'100%'}}></img>)
+                })}
+              </div>)
     }
 }
-export default CardComponents;
+export default CardComponent;

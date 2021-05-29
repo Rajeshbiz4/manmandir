@@ -13,7 +13,7 @@ class ContactUs extends React.Component {
   <blockquote className="blockquote">
   <h1>Contact Us :- Pavitra Mandir - Hemant Traders</h1>
   <h2>We love hearing from you ! Here are some of the ways to get in touch with us....</h2>
-  S
+  
   
   
 

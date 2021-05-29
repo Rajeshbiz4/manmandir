@@ -7,7 +7,7 @@ class MobileNumber extends React.Component
         super()
         this.state=
         {
-            MobileNumber:['7028757019']
+            MobileNumber: ['7028757019']
         }
     }
     
