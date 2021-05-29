@@ -1,28 +1,30 @@
+import React from 'react'
+import img from "./../assets/Images/mandir.jpg";
+import CardImageMap from './CardImageMap';
 
-import React from "react"
-import Logo from "./../assets/Images/mandir.jpg"
- import './Sass.scss';
+const Image = [{
+    photo:{img}
+   
+}];
 
-
-class CardComponents extends React.Component
-{
-    constructor()
-    {
+class CardComponents extends React.Component {
+    constructor() {
         super()
-    }
-    render()
-    {
-        return(
+        this.state =
+        {
 
-        <div className='demo'>
-        
-            <img src={Logo} style={{height:'200px',width:'150px',marginTop:'5%' ,marginLeft:'10%'}} class="circle"></img>
-            <img src={Logo} style={{height:'200px',width:'150px',marginTop:'5%' ,marginLeft:'10%'}} class="circle"></img>
-            <img src={Logo} style={{height:'200px',width:'150px',marginTop:'5%' ,marginLeft:'10%'}} class="circle"></img>
-            <img src={Logo} style={{height:'200px',width:'150px',marginTop:'5%' ,marginLeft:'10%'}} class="circle"></img>
-            </div>
-        )
-            
+        }
     }
-}
+
+    render() {
+        return (<div className="text-center" style={{height:'100px', width:'200px'}}>
+            {Image.map((item)=>
+                <CardImageMap image={item.photo}></CardImageMap>
+                
+            )}
+        </div>)
+
+            }
+    }
+
 export default CardComponents;
