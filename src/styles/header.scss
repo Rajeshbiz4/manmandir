@@ -1,10 +1,23 @@
-.navbar-brand
-{
-    font-size:'10px';
+.navbar-brand {
+  font-size: 15px;
 }
-// style={{padding:'1px 1px',height:'30px'}}
-.user
-{
-    margin-top:'30%';
-    margin-left:'900%';
+.envelope {
+  height: 13px;
+}
+.phone {
+  font-size: 15px;
+}
+.loginlink {
+  color: white;
+  margin-left: 1900%;
+}
+.seperator {
+  margin-left: 630%;
+}
+.signup {
+  color: white;
+}
+.cart {
+  margin-top: 0.5%;
+  margin-left: 64%;
 }

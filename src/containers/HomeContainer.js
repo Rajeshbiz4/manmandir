@@ -5,13 +5,13 @@ import LogoComponent from '../Components/LogoComponents';
 import CardComponents from '../Components/CardComponents';
 
 
-    function HomeContainer() {
-      return (
-        <div>
-       <LogoComponent/>
-       <CardComponents/>
-        </div>
-      );
-    }
+//     function HomeContainer() {
+//       return (
+//         <div>
+//        <LogoComponent/>
+//        <CardComponents/>
+//         </div>
+//       );
+//     }
  
- export default HomeContainer;
+//  export default HomeContainer;
