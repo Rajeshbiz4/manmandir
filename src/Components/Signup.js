@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/signup.scss';
+// import '../styles/signup.scss';
 import Logo from "./../assets/Images/man.png"
 
 class Signup extends React.Component {
@@ -15,9 +15,9 @@ class Signup extends React.Component {
                     <div className="row">
                         <div className="col-lg-5">
                             <img src={Logo} class="container-fluid" />
-                            <div className="login">Sign Up</div>
+                            <div className="signupdiv">Sign Up</div>
                             <hr className="solid" />
-                            <p>We do not share your <br/> personal details with <br/> anyone</p>
+                            <p className="psignup">We do not share your <br/> personal details with <br/> anyone</p>
                         </div>
                         <div className="col-lg-7">
                         

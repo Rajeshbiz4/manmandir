@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ourpurpose.scss';
+// import '../styles/ourpurpose.scss';
 
 class OurPurpose extends React.Component {
     constructor() {
@@ -10,7 +10,7 @@ class OurPurpose extends React.Component {
             <div class="container">
                 <blockquote className="blockquote">
                     <h1>Our Purpose :-</h1><br />
-                    <p>“ We want to be a Reason for Bringing Prosperity in Everybody's Life by Giving a
+                    <p className="ourpurpose">“ We want to be a Reason for Bringing Prosperity in Everybody's Life by Giving a
                      Beautiful Temple.’’</p>
                 </blockquote>
             </div>
