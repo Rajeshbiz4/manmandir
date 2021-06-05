@@ -1,12 +1,12 @@
 import React from 'react';
 // import '../styles/ourpurpose.scss';
 
-class OurPurpose extends React.Component {
+export default class OurPurpose extends React.Component {
     constructor() {
         super()
     }
     render() {
-        return (<div className="demo2" style={{ marginTop: '-3%' }}>
+        return (<div className="demo2" style={{marginTop:'-3%'}}>
             <div class="container">
                 <blockquote className="blockquote1">
                     <h1>Our Purpose :-</h1><br />
@@ -20,4 +20,3 @@ class OurPurpose extends React.Component {
     }
 }
 
-export default OurPurpose;

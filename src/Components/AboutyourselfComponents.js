@@ -1,6 +1,6 @@
 import React from 'react';
 
-class AboutYourSelf extends React.Component {
+export default class AboutYourSelf extends React.Component {
     constructor() {
         super()
     }
@@ -20,4 +20,3 @@ class AboutYourSelf extends React.Component {
     }
 }
 
-export default AboutYourSelf;

@@ -1,32 +1,34 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
+import { bindActionCreators } from 'redux';
 // import { fetchPost } from "./postaction";
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import Login from "./Components/login.js";
-import Signup from "./Components/Signup.js";
-import HomePage from "./Components/HomePage.js";
-import HeaderComponent from "./Components/HeaderComponents.js";
-import FooterComponents from "./Components/FooterComponents.js";
-import AboutYourSelf from "./Components/AboutyourselfComponents";
-import "./styles/logsign.scss";
-import ForgotPassword from "./Components/ForgotPassword";
-import CardComponents from "./Components/CardComponents";
-import AddToCard from "./Components/AddToCard";
+import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import Login from './Components/login';
+import Signup from './Components/Signup';
+import LogoComponent from './Components/LogoComponents';
+import CardComponents from './Components/CardComponents';
+// import HomeContainer from "./containers/HomeContainer";
+import AboutYourSelf from './Components/AboutyourselfComponents';
+import OurPurpose from './Components/OurPurpose';
+import ContactUs from './Components/ContactUs';
+// import Navbar from './Components/Navbar';
+import HeaderComponent from './Components/HeaderComponents';
+import FooterComponents from './Components/FooterComponents';
+import MobileNumber from './Components/MobileNumber';
+
 
 // class App extends React.Component {
-
 //   componentDidMount () {
 //     console.log("------------");
 //     this.props.fetchPost();
 //   }
-
 //   render(){
 //     console.log("render", this.props.data);
 //   return (
 //     <div className="App">
-//      Redux
+//      Redux  
 //     { this.props.data.loading ? <div>loading ......</div> : <div>Result</div>}
 
 //     </div>
@@ -39,29 +41,37 @@ import AddToCard from "./Components/AddToCard";
 //     data : state.quetions,
 //   }
 // }
-
 // function  mapDispacthToProps(dispatch) {
 //    return bindActionCreators({
 //     fetchPost
 //    }, dispatch)
 // }
-
 // export default connect(mapStatetoProps,mapDispacthToProps)(App);
+ 
+    function App() {
+      return (
+        <div>
+          <Router>
+          <HeaderComponent/>
+<Switch>
+{/* <Route exact path="/" component={HomeContainer}/> */}
+<Route exact path="/login" component={Login}/>
+<Route exact path="/signup" component={Signup}/>
+<Route exact path="/MobileNumber" component={MobileNumber}/>
+</Switch>
 
-function App() {
-  return (
-    <div>
-      <Router>
-        {/* <CardComponents/> */}
-        <HeaderComponent />
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/forgot" component={ForgotPassword} />
-        <FooterComponents />
-      </Router>
-    </div>
-  );
-}
-
-export default App;
+<LogoComponent/>
+{/* <Navbar/> */}
+<CardComponents/>
+<AboutYourSelf/>
+<OurPurpose/>
+<ContactUs/>
+<FooterComponents/>
+       </Router>
+       
+      
+        </div>
+      );
+    }
+ 
+ export default App;
