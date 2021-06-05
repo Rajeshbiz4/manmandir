@@ -1,27 +1,34 @@
 import React from 'react'
+
 class CardImageMap extends React.Component
 {
-    constructor()
+  constructor()
+  {
+    super()
+    this.state=
     {
-        super()
-        this.state=
-        {
 
-        }
     }
-    componentDidMount()
-    {
-        console.log(this.props);
-    }
-    
-    render()
-    {
-        return(
-        <div>
-        
-             <img src={this.props.image} alt="mandir image"/>
-            
-             </div>)
-    }
+  }
+  componentDidMount()
+  {
+    console.log(this.props);
+  }
+  render()
+  {
+    return(<div>
+     <div>
+  {this.props.data.map(person => {
+    return (<div>
+       <div key={person.title}>
+       {person.description} {person.price}{person.title}
+       </div>
+      </div>
+    )
+  })}
+</div>
+    </div>)
+   
 }
-export default CardImageMap; 
+}
+export default CardImageMap;
