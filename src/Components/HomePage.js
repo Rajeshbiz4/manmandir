@@ -11,12 +11,15 @@ import Signup from "./Signup";
 import HeaderComponent from "./HeaderComponents";
 import FooterComponents from "./FooterComponents";
 import "../styles/Sass.scss";
+import Categories from "./Categories";
+import CardComponent from "./CardComponents";
 
 const HomePage = () => {
   return (
     <div>
       <LogoComponent />
       <Navbar />
+      <Categories/>
       <AboutYourSelf />
       <OurPurpose />
       <ContactUs />

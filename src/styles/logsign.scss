@@ -108,6 +108,7 @@ margin-top: 15%;
     width: 60%;
     margin-left: -1%;
     border-radius: 4px;
+    margin-top: -10%;
  }
        
         input[type="text"]
@@ -139,15 +140,16 @@ margin-top: 15%;
           font-size:20px;
           margin-left: 8%;
       }
-      .existinglink
+      .existinglin
       {
           font-size: 20px;
           color: blue;
           margin-top: -5%;
+          margin-left: 5%;
       }
       //header
       .navbar-brand {
-        font-size: 15px;
+        font-size: 18px;
         color: white;
       }
       .envelope {
@@ -159,19 +161,53 @@ margin-top: 15%;
       }
       .loginlink {
         color: white;
-        margin-left: 1250%;
+        margin-left: 900%;
+        font-size: 20px;
+        
       }
       .homelink
       {
-          margin-left: 10%;
+          margin-left: 20%;
+          font-size: 20px;
       }
       .seperator {
-        margin-left: 250%;
+        margin-left: 230%;
+        margin-top: 2%;
+       
       }
       .signup {
         color: white;
+        font-size: 20px;
       }
       .cart {
         
-        margin-left: 55%;
+        margin-left: 50%;
+        margin-top: 2%;
+        height: 30px;
+        width: 30px;
+       
       }
+
+      .addspan
+      {
+        position: absolute;
+        right: 13px;
+        z-index: 1;
+        top: 2px;
+        background-color: red;
+        width: 21px;
+        border-radius: 50%;
+        display: inline-block;
+        color: white;
+        height: 20px;
+        text-align: center;
+        font-size: 15px;
+        
+      }
+      //forgot
+      .img
+{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 2%;
+}

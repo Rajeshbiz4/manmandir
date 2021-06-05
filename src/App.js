@@ -1,17 +1,19 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { connect } from "react-redux";
-import { bindActionCreators } from 'redux';
+import { bindActionCreators } from "redux";
 // import { fetchPost } from "./postaction";
-import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import Login from './Components/login.js';
-import Signup from './Components/Signup.js';
-import HomePage from './Components/HomePage.js';
-import HeaderComponent from './Components/HeaderComponents.js';
-import FooterComponents from './Components/FooterComponents.js';
-import AboutYourSelf from './Components/AboutyourselfComponents';
-import './styles/logsign.scss'
-
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import Login from "./Components/login.js";
+import Signup from "./Components/Signup.js";
+import HomePage from "./Components/HomePage.js";
+import HeaderComponent from "./Components/HeaderComponents.js";
+import FooterComponents from "./Components/FooterComponents.js";
+import AboutYourSelf from "./Components/AboutyourselfComponents";
+import "./styles/logsign.scss";
+import ForgotPassword from "./Components/ForgotPassword";
+import CardComponents from "./Components/CardComponents";
+import AddToCard from "./Components/AddToCard";
 
 // class App extends React.Component {
 
@@ -24,7 +26,7 @@ import './styles/logsign.scss'
 //     console.log("render", this.props.data);
 //   return (
 //     <div className="App">
-//      Redux  
+//      Redux
 //     { this.props.data.loading ? <div>loading ......</div> : <div>Result</div>}
 
 //     </div>
@@ -49,13 +51,15 @@ import './styles/logsign.scss'
 function App() {
   return (
     <div>
-     <Router>
-        <HeaderComponent/> 
-       <Route exact path="/" component={HomePage} /> 
-       <Route exact path="/login" component={Login} />
-       <Route exact path="/signup" component={Signup} />  
-       <FooterComponents/>
-      </Router >
+      <Router>
+        {/* <CardComponents/> */}
+        <HeaderComponent />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={Signup} />
+        <Route exact path="/forgot" component={ForgotPassword} />
+        <FooterComponents />
+      </Router>
     </div>
   );
 }

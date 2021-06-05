@@ -1,11 +1,34 @@
 import React from 'react'
-import imagesPool from './imagesPool';
 
-const CardImageMap = () => {
-   return (
-       <div> 
-       <img src={imagesPool} style={{height:'70px',width:'70px'}} />
-     </div>
-)};
+class CardImageMap extends React.Component
+{
+  constructor()
+  {
+    super()
+    this.state=
+    {
 
+    }
+  }
+  componentDidMount()
+  {
+    console.log(this.props);
+  }
+  render()
+  {
+    return(<div>
+     <div>
+  {this.props.data.map(person => {
+    return (<div>
+       <div key={person.title}>
+       {person.description} {person.price}{person.title}
+       </div>
+      </div>
+    )
+  })}
+</div>
+    </div>)
+   
+}
+}
 export default CardImageMap;

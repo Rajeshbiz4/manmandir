@@ -14,7 +14,7 @@ class HeaderComponent extends React.Component {
         {
           <nav
             className="navbar navbar-expand-sm  text-light bg-primary"
-            style={{ padding: "1px 1px", height: "30px" }}
+            style={{ padding: "1px 1px", height: "50px" }}
           >
             <div className="container-fluid">
               <FaPhoneAlt className="phone"></FaPhoneAlt>
@@ -25,7 +25,7 @@ class HeaderComponent extends React.Component {
                 <ul class="navbar-nav mr-auto">
                   <li className="nav-item">
                     <Link className="homelink" to="/">
-                      HomePage
+                      Home
                     </Link>
                   </li>
                   <li className="nav-item">
@@ -42,6 +42,7 @@ class HeaderComponent extends React.Component {
                   &nbsp;&nbsp;&nbsp;&nbsp;
                 </ul>
                 <FaCartPlus className="cart"></FaCartPlus>
+                <span className="addspan">1</span>
               </div>
             </div>
           </nav>

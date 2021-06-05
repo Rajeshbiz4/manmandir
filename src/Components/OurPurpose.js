@@ -8,7 +8,7 @@ class OurPurpose extends React.Component {
     render() {
         return (<div className="demo2" style={{ marginTop: '-3%' }}>
             <div class="container">
-                <blockquote className="blockquote">
+                <blockquote className="blockquote1">
                     <h1>Our Purpose :-</h1><br />
                     <p className="ourpurpose">“ We want to be a Reason for Bringing Prosperity in Everybody's Life by Giving a
                      Beautiful Temple.’’</p>

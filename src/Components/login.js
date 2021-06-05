@@ -48,9 +48,9 @@ class Login extends React.Component {
                       />
                     </div>
                   </div>
-                  <a href="#" className="forgot">
-                    Forgot
-                  </a>
+                  <Link  className="forgot" to="/Forgot">
+                    Forgot Password
+                  </Link>
                   <div className="form-row">
                     <div className="col-lg-7 my-2 p-2" />
                     <button className="btnlogin">Login In</button>

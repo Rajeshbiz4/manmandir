@@ -1,36 +1,116 @@
+// import React from 'react';
+// import ButtonComponents from './Buttoncomponents';
+// import CardImageMap from './CardImageMap';
+// import Logo from "./../assets/Images/man.png";
+// class CardComponents extends React.Component
+// {
+//     constructor()
+//     {
+//       super()
+//       this.state = {
+//         Card: [{
+//         title:'shital',
+//         description:'hii shital',
+//         price:100,
+//        },{
+//         title:'shital',
+//         description:'hii shital',
+//         price:100,
+//        },
+//        {
+//         title:'shital',
+//         description:'hii shital',
+//         price:100,
+//        },
+//        {
+//         title:'shital',
+//         description:'hii shital',
+//         price:100,
+//        }]
+//     }
+//     }
+    
+   
+//     render()
+//     {
 
-import React from 'react'
-//import logo from './../assets/Images/mandir.jpg';
-import CardImageMap from './CardImageMap'
+//       console.log(this.state)
+//       return(
+//         <div>
+//           <img src={Logo} ></img>
+//           <ButtonComponents className="addbtnlogo"></ButtonComponents>
+//          <CardImageMap data={this.state.Card}></CardImageMap>
+//         </div>)
+//     }
+// }
 
-class CardComponent extends React.Component
+// export default CardComponents; 
+import React from 'react';
+import ButtonComponents from './Buttoncomponents';
+import CardImageMap from './CardImageMap';
+import { FaPhoneAlt, FaUser, FaEnvelope, FaCartPlus } from "react-icons/fa";
+class CardComponents extends React.Component
 {
     constructor()
     {
-        super()
-        this.state=
-        {
-          //  Mob:["../../../assets/Images/mandir."]
-          images :[{src:'./../assets/Images/man.png'}]
-            // { id: 1, src: './assets/Images/mandir.jpg', title: 'foo', description: 'bar' },
-            // { id: 2, src: './assets/Images/mandir.jpg', title: 'foo', description: 'bar' },
-            // { id: 3, src: './assets/Images/mandir.jpg', title: 'foo', description: 'bar' },
-            // { id: 4, src: './assets/Images/mandir.jpg', title: 'foo', description: 'bar' },
-            // { id: 5, src: './assets/Images/mandir.jpg', title: 'foo', description: 'bar' },
-        // ]
-        }
+      super()
+      this.state = {
+        Card: [{
+        img:<FaUser/>,
+        title:'Temple',
+        description:'Burma Teakwood Carving Temple',
+        price:100,
+       },{
+        img:<FaCartPlus/>,
+        title:'Temple',
+        description:'Burma Teakwood Carving Temple',
+        price:100,
+       },
+       {
+        img:<FaEnvelope/>,
+        title:'Temple',
+        description:'Burma Teakwood Carving Temple',
+        price:100,
+       },
+       {
+        img:<FaPhoneAlt/>,
+        title:'Temple',
+        description:'Burma Teakwood Carving Temple',
+        price:100,
+       }]
+    }
     }
     
+   
     render()
     {
-      console.log(this.state);
-        return(<div>
-                {/* <CardImageMap data={this.state.images} /> */}
-                {this.state.images.map((index,item)=>
-                {
-                  return(<img key={index} src={item.src} style={{height:'100%',width:'100%'}}></img>)
-                })}
-              </div>)
+
+      console.log(this.state)
+      return(
+        <div>
+          <section>
+            <title title="services"> </title>
+            <div>
+              {this.state.Card.map(item=>{
+                return(
+                  <article key={`item- ${item.title}`}>
+                    <span>{item.img}</span>
+                    <h6>{item.title}</h6>
+                    <h6>{item.description}</h6>
+                    <p>{item.price}</p>
+                    <ButtonComponents/>
+                  </article>
+                )
+              })}
+            </div>
+          </section>
+        </div>)
     }
 }
-export default CardComponent;
+
+export default CardComponents; 
+
+
+
+
+

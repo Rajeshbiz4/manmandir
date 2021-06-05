@@ -5,9 +5,9 @@ class AboutYourSelf extends React.Component {
         super()
     }
     render() {
-        return (<div className="demo1">
+        return (<div className="aboutdemo">
             <div className="container">
-                <blockquote className="blockquote" style={{ marginTop: '-1%' }}>
+                <blockquote className="blockquoteabout" style={{ marginTop: '-1%' }}>
                     <h1>About Ourself :-</h1><br />
                     <p className="about"> We are into the Business of Customer Statisfaction and Continuously providing a Quality product to our Customers.
                     Our main motto is to provide a Superiorly made HomeTemples,Solely Designed for Home

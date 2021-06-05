@@ -46,7 +46,7 @@ class Signup extends React.Component {
                                     <button className="btncontinue">Continue</button>
                                 </div><br/>
                                
-                     <Link to="/login" className="existinglink"> Existing User? Log In</Link>
+                     <Link to="/login" className="existinglin"> Existing User? Log In</Link>
 
                             </form>
                         </div>
