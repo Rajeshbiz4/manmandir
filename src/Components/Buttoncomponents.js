@@ -1,6 +1,6 @@
 
-import CardImageMap from './CardImageMap';
 import React from 'react';
+import "../styles/button.scss"
 
 class ButtonComponents extends React.Component
 {
@@ -14,7 +14,7 @@ class ButtonComponents extends React.Component
     render()
     {
       return(<div>
-              <button style={{background:'greenyellow',fontSize:'15px',padding:'2px 2px',borderRadius:'20px',width:'8%',height:'1%',color:'black',marginLeft:'5%',fontFamily:'sans-serif'}}>Add</button>
+              <button  className="Addbutton">Add</button>
               </div>)
     }
 }

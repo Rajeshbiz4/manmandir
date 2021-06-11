@@ -1,13 +1,15 @@
+
 export const fetch_post_action = () => {
     return {
         type: 'FETCH_POST'
     }
 }
 
-export const fetch_post_Sucess = data => {
+export const fetch_post_Sucess = data=> {
+    
     return {
         type: 'FETCH_POST_SUCCESS',
-        data : data
+        data :data
     }
 }
 
@@ -21,7 +23,7 @@ export const fetch_post_failure = () => {
 export const fetchPost = () => {
     return  (dispatch) =>{
         dispatch(fetch_post_action())
-        return fetch('https://api.github.com/users')
+        return fetch(' ')
            .then(Response => Response.json())
            .then(data => {
             //    setTimeout(() => {
@@ -34,3 +36,4 @@ export const fetchPost = () => {
         })
     }
 }
+   

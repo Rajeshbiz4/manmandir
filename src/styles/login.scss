@@ -2,10 +2,25 @@
   background-color: white;
   border-radius: 30px;
 }
+.passworderror {
+  font-size: 11px;
+  color: red;
+  margin-top: -10px;
+}
+.passerror {
+  font-size: 11px;
+  color: red;
+  margin-top: -10px;
+}
 .img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   margin-top: 15%;
+}
+.container-fluid {
+  margin-top: "20%";
+  height: "20%";
+  width: "50%";
 }
 .btnlogin {
   background-color: rgb(59, 56, 233);
@@ -16,40 +31,57 @@
   border-radius: 2px;
   margin-top: -15%;
 }
-
-.btn {
+.btnlogin:hover
+{
+  background-color: crimson;
+  border-radius: 10px;
+  border-color: crimson;
+}
+.btnotp {
   background-color: rgb(59, 56, 233);
   color: white;
   height: 40px;
-  width: 110%;
-  margin-left: -7%;
-  border-radius: 4px;
+  width: 60%;
+  margin-left: -2%;
+  border-radius: 2px;
   margin-top: -5%;
+}
+.btnotp:hover
+{
+  background-color: crimson;
+  border-radius: 10px;
+  border-color: crimson;
 }
 input[type="text"],
 input[type="password"] {
   border: none;
   border-bottom: 2px solid gray;
 }
-input:focus {
-  outline: none;
-}
-.a {
-  margin-left: 7%;
+
+.loginaccount {
   font-size: 20px;
+  color: blue;
+  margin-top: -10%;
 }
 .forgot {
   margin-top: -10%;
+  color: blue;
 }
-//   .login
-//   {
-//     margin-top: 10%;
-//     margin-left: 8%;
-//     font-size: 30px;
-//     color:rgb(59, 56, 233);
-//   }
-p {
+.loginp {
   color: blue;
   font-size: 20px;
   margin-left: 8%;
+}
+.line {
+  margin-left: -2%;
+  margin-top: 2%;
+}
+.loginin {
+  margin-top: -1%;
+  color: blue;
+  font-size: 30px;
+  margin-left: 10%;
+}
+.signin {
+    margin-top: -20px;
 }

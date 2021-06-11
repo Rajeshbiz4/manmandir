@@ -1,5 +1,7 @@
+//header
 .navbar-brand {
-  font-size: 15px;
+  font-size: 18px;
+  color: white;
 }
 .envelope {
   height: 13px;
@@ -9,15 +11,40 @@
 }
 .loginlink {
   color: white;
-  margin-left: 1900%;
+  margin-left: 900%;
+  font-size: 20px;
+  transition:o.5 ease-out;
+}
+.homelink {
+  margin-left: 20%;
+  font-size: 20px;
 }
 .seperator {
-  margin-left: 630%;
+  margin-left: 230%;
+  margin-top: 2%;
 }
 .signup {
   color: white;
+  font-size: 20px;
 }
 .cart {
-  margin-top: 0.5%;
-  margin-left: 64%;
+  margin-left: 50%;
+  margin-top: 2%;
+  height: 30px;
+  width: 30px;
+}
+
+.addspan {
+  position: absolute;
+  right: 13px;
+  z-index: 1;
+  top: 2px;
+  background-color: red;
+  width: 21px;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  height: 20px;
+  text-align: center;
+  font-size: 15px;
 }
