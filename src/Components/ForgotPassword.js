@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,NavLink} from 'react-router-dom';
 // import '../styles/signup.scss';
 import Logo from "./../assets/Images/man.png"
 
@@ -34,7 +34,7 @@ class ForgotPassword extends React.Component {
                                     <button className="btncontinue">Continue</button>
                                 </div><br/>
                                
-                     <Link to="/signup" className="existinglink">  Dont have an account? Sign Up</Link>
+                     <NavLink to="/signup" className="dontaccount">  Dont have an account? Sign Up</NavLink>
 
                             </form>
                         </div>

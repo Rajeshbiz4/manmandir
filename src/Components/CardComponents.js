@@ -29,8 +29,7 @@
 //        }]
 //     }
 //     }
-    
-   
+
 //     render()
 //     {
 
@@ -44,73 +43,67 @@
 //     }
 // }
 
-// export default CardComponents; 
-import React from 'react';
-import ButtonComponents from './Buttoncomponents';
-import CardImageMap from './CardImageMap';
+// export default CardComponents;
+import React from "react";
+import ButtonComponents from "./Buttoncomponents";
+import CardImageMap from "./CardImageMap";
+import Logo from "./../assets/Images/mandir.jpg";
+import mandir from "./../assets/Images/shame.webp";
 import { FaPhoneAlt, FaUser, FaEnvelope, FaCartPlus } from "react-icons/fa";
-class CardComponents extends React.Component
-{
-    constructor()
-    {
-      super()
-      this.state = {
-        Card: [{
-        img:<FaUser/>,
-        title:'Temple',
-        description:'Burma Teakwood Carving Temple',
-        price:100,
-       },{
-        img:<FaCartPlus/>,
-        title:'Temple',
-        description:'Burma Teakwood Carving Temple',
-        price:100,
-       },
-       {
-        img:<FaEnvelope/>,
-        title:'Temple',
-        description:'Burma Teakwood Carving Temple',
-        price:100,
-       },
-       {
-        img:<FaPhoneAlt/>,
-        title:'Temple',
-        description:'Burma Teakwood Carving Temple',
-        price:100,
-       }]
-    }
-    }
-    
-   
-    render()
-    {
+class CardComponents extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      Card: [
+        {
+          title: "Temple",
+          description: " Carving Temple",
+          price: 100,
+        },
+        {
+          title: "Temple",
+          description: "Carving Temple",
+          price: 100,
+        },
+        {
+          title: "Temple",
+          description: "Carving Temple",
+          price: 100,
+        },
+      ],
+    };
+  }
 
-      console.log(this.state)
-      return(
-        <div>
-          <section>
-            <title title="services"> </title>
-            <div>
-              {this.state.Card.map(item=>{
-                return(
-                  <article key={`item- ${item.title}`}>
-                    <span>{item.img}</span>
-                    <h6>{item.title}</h6>
-                    <h6>{item.description}</h6>
-                    <p>{item.price}</p>
-                    <ButtonComponents/>
-                  </article>
-                )
-              })}
-            </div>
-          </section>
-        </div>)
-    }
+  render() {
+    console.log(this.state);
+    return (
+      <div className="carddiv">
+        <section className="sectioncard">
+          {this.state.Card.map((item) => {
+            return (
+              <div>
+                <div className="sectionimgdiv">
+                  <img src={Logo} />
+                  <p>{item.title}</p>
+                  <p>{item.description}</p>
+                  <p>{item.price}</p>
+                  <ButtonComponents />
+                </div>
+
+                <div className="sectionimgdiv">
+                  <img src={Logo} />
+                  <p>{item.title}</p>
+                  <p>{item.description}</p>
+                  <p>{item.price}</p>
+                  <ButtonComponents />
+                </div>
+              </div>
+            );
+          })}
+        </section>
+      </div>
+    );
+  }
 }
 
-export default CardComponents; 
-
-
-
-
-
+export default CardComponents;

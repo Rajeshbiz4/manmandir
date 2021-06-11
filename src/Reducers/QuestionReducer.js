@@ -1,11 +1,13 @@
+
+var customData = require('../db.json');
 const initial = {
-    result : [],
+ result : [],
  loading : false,
  error : false
 }
-
 const QuestionReducer = (state = initial, action)  => {
-    switch(action.type) {
+    console.log(customData);
+         switch(action.type) {
         case 'FETCH_POST':
             return {
                 ...state,
@@ -15,7 +17,7 @@ const QuestionReducer = (state = initial, action)  => {
         case 'FETCH_POST_SUCCESS':{
             return {
                 ...state,
-                result : action.data,
+                result : customData,
                 loading : false,
                 error : false
             }

@@ -16,7 +16,7 @@ class ContactUs extends React.Component {
       <div className="demo1" style={{ marginTop: "-5%" }}>
         <div className="container">
           <blockquote className="blockquote2">
-            <h1>Contact Us :- Pavitra Mandir - Hemant Traders</h1>
+            <h1 className="contactustitle">Contact Us :- Pavitra Mandir - Hemant Traders</h1>
             <h2>
               We love hearing from you ! Here are some of the ways to get in
               touch with us....

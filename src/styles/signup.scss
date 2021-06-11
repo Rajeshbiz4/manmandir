@@ -2,21 +2,38 @@
   background-color: white;
   border-radius: 30px;
 }
+.Error
+{
+  font-size: 17px;
+  color: red;
+}
 .img {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   margin-top: 20%;
 }
-.btnsign {
+.container-fluid {
+  margin-top: "20%";
+  height: "40%";
+  width: "50%";
+}
+.btncontinue {
   background-color: rgb(59, 56, 233);
   color: white;
   height: 50px;
   width: 60%;
   margin-left: -1%;
   border-radius: 4px;
+  margin-top: -8%;
+}
+.btncontinue:hover
+{
+background-color: crimson;
+  border-radius: 10px;
+  border-color: crimson;
 }
 
-input[type="text"] {
+input[type="tel"] {
   border: none;
   border-bottom: 2px solid gray;
 }
@@ -29,14 +46,26 @@ input:focus {
   margin-top: 50px;
 }
 
-.login {
-  margin-top: 12%;
+.signupdiv {
+  margin-top: 2%;
   margin-left: 8%;
   font-size: 30px;
-  color: rgb(59, 56, 233);
+  color: blue;
 }
-p {
+.psignup {
   color: blue;
   font-size: 20px;
   margin-left: 8%;
+}
+.existinglin {
+  font-size: 20px;
+  color: blue;
+  margin-top: -5%;
+  margin-left: 5%;
+}
+.passerror
+{
+  font-size: 11px;
+  color: red;
+  margin-top: -10px;
 }
