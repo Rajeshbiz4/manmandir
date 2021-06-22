@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid } from "@material-ui/core";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -10,12 +11,7 @@ import HomePage from "./Components/HomePage.js";
 import HeaderComponent from "./Components/HeaderComponents.js";
 import FooterComponents from "./Components/FooterComponents.js";
 import AboutYourSelf from "./Components/AboutyourselfComponents";
-//import "./styles/logsign.scss";
-import "./styles/login.scss";
-import "./styles/signup.scss";
-import "./styles/forgot.scss";
-import "./styles/header.scss"
-import ForgotPassword from "./Components/ForgotPassword";
+import forgotpassward from "./Components/Forgot Password";
 import AddToCard from "./Components/AddToCard";
 
 // class App extends React.Component {
@@ -54,14 +50,22 @@ import AddToCard from "./Components/AddToCard";
 function App() {
   return (
     <div>
-      <Router>
-        <HeaderComponent />
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/forgot" component={ForgotPassword} />
-        <FooterComponents />
-      </Router>
+      <Grid>
+        <Router>
+          <Grid item xs={12}>
+            {" "}
+            <HeaderComponent />
+          </Grid>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={Signup} />
+          <Route path="/Forgot passward" component={forgotpassward} />
+          <Grid item xs={12}>
+            {" "}
+            <FooterComponents />
+          </Grid>
+        </Router>
+      </Grid>
     </div>
   );
 }

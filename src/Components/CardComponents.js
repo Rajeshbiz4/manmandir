@@ -1,49 +1,3 @@
-// import React from 'react';
-// import ButtonComponents from './Buttoncomponents';
-// import CardImageMap from './CardImageMap';
-// import Logo from "./../assets/Images/man.png";
-// class CardComponents extends React.Component
-// {
-//     constructor()
-//     {
-//       super()
-//       this.state = {
-//         Card: [{
-//         title:'shital',
-//         description:'hii shital',
-//         price:100,
-//        },{
-//         title:'shital',
-//         description:'hii shital',
-//         price:100,
-//        },
-//        {
-//         title:'shital',
-//         description:'hii shital',
-//         price:100,
-//        },
-//        {
-//         title:'shital',
-//         description:'hii shital',
-//         price:100,
-//        }]
-//     }
-//     }
-
-//     render()
-//     {
-
-//       console.log(this.state)
-//       return(
-//         <div>
-//           <img src={Logo} ></img>
-//           <ButtonComponents className="addbtnlogo"></ButtonComponents>
-//          <CardImageMap data={this.state.Card}></CardImageMap>
-//         </div>)
-//     }
-// }
-
-// export default CardComponents;
 import React from "react";
 import ButtonComponents from "./Buttoncomponents";
 import CardImageMap from "./CardImageMap";
@@ -81,7 +35,7 @@ class CardComponents extends React.Component {
         <section className="sectioncard">
           {this.state.Card.map((item) => {
             return (
-              <div>
+              <div className="grid">
                 <div className="sectionimgdiv">
                   <img src={Logo} />
                   <p>{item.title}</p>
