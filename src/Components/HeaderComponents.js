@@ -1,9 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import Number from "./Number";
-
 import { FaPhoneAlt, FaUser, FaEnvelope, FaCartPlus } from "react-icons/fa";
-
+// import "../styles/header.scss";
+import Number from "./Number";
 class HeaderComponent extends React.Component {
   constructor() {
     super();
@@ -12,37 +11,34 @@ class HeaderComponent extends React.Component {
     return (
       <div>
         {
-          <nav
-            className="navbar navbar-expand-sm  text-light bg-primary"
-            style={{ padding: "1px 1px", height: "50px" }}
-          >
+          <nav className="navbar navbar-expand-sm  text-light bg-primary">
             <div className="container-fluid">
               <FaPhoneAlt className="phone"></FaPhoneAlt>
               <div className="navbar-brand">{Number.number}</div>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <FaEnvelope className="envelope"></FaEnvelope>&nbsp;&nbsp;
                 <div className="navbar-brand">{Number.email}</div>
-                <ul class="navbar-nav mr-auto">
+                <ul className="navbar-nav mr-auto">
                   <li className="nav-item">
-                    <Link className="homelink" to="/">
-                      Home
-                    </Link>
+                    {/* <Link className="homelink" to="/">
+                      HomePage
+                    </Link> */}
                   </li>
                   <li className="nav-item">
-                    <Link className="loginlink" to="/login">
+                    <NavLink className="loginlink" exact to="/login">
                       Login
-                    </Link>
+                    </NavLink>
                   </li>
                   <span className="seperator"> | </span>&nbsp;&nbsp;
                   <li className="nav-item">
-                    <Link className="signup" to="/Signup">
+                    <NavLink className="signup" exact to="/Signup">
                       SignUp
-                    </Link>
+                    </NavLink>
                   </li>
                   &nbsp;&nbsp;&nbsp;&nbsp;
                 </ul>
                 <FaCartPlus className="cart"></FaCartPlus>
-                <span className="addspan">1</span>
+                <span className="addspan">0</span>
               </div>
             </div>
           </nav>

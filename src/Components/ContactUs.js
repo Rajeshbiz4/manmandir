@@ -13,14 +13,16 @@ class ContactUs extends React.Component {
   }
   render() {
     return (
-      <div className="demo1" style={{ marginTop: "-5%" }}>
+      <div className="demo3">
         <div className="container">
-          <blockquote className="blockquote2">
-            <h1 className="contactustitle">Contact Us :- Pavitra Mandir - Hemant Traders</h1>
-            <h2>
+          <blockquote className="contactcontainer">
+            <h1 className="heading2">
+              Contact Us :- Pavitra Mandir - Hemant Traders
+            </h1>
+            <p className="para2">
               We love hearing from you ! Here are some of the ways to get in
               touch with us....
-            </h2>
+            </p>
           </blockquote>
         </div>
       </div>
