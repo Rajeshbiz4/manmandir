@@ -1,7 +1,5 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import Number from "./Number";
-
 import { FaPhoneAlt, FaUser, FaEnvelope, FaCartPlus } from "react-icons/fa";
 
 const  HeaderComponent= (props) =>{

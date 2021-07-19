@@ -1,7 +1,7 @@
 import React from "react";
 // import Home from './login';
-import { Link, NavLink } from "react-router-dom";
-// import '../styles/signup.scss';
+import { Link } from "react-router-dom";
+// import "../styles/signup.scss";
 import Logo from "./../assets/Images/man.png";
 
 export default class Signup extends React.Component {
@@ -102,7 +102,6 @@ export default class Signup extends React.Component {
     });
     return formIsValid;
   }
-
   render() {
     return (
       <div>
@@ -125,11 +124,10 @@ export default class Signup extends React.Component {
                   onSubmit={this.submituserRegistrationForm}
                 >
                   <div className="form-row">
-                    <div className="col-lg-7">
+                    <div className="col-lg-6">
                       <input
                         type="text"
                         name="username"
-                        maxLength="10"
                         class="form-control my-4 p-2"
                         placeholder="User Name"
                         value={this.state.fields.username}
@@ -139,9 +137,7 @@ export default class Signup extends React.Component {
                         {this.state.errors.username}
                       </div>
                     </div>
-                  </div>
-                  <div className="form-row">
-                    <div className="col-lg-7">
+                    <div className="col-lg-6">
                       <input
                         type="text"
                         name="mobileno"
@@ -155,9 +151,7 @@ export default class Signup extends React.Component {
                         {this.state.errors.mobileno}
                       </div>
                     </div>
-                  </div>
-                  <div className="form-row">
-                    <div className="col-lg-7">
+                    <div className="col-lg-6">
                       <input
                         type="text"
                         name="emailid"
@@ -166,11 +160,11 @@ export default class Signup extends React.Component {
                         value={this.state.fields.emailid}
                         onChange={this.handleChange}
                       />
-                      <div className="passerror">{this.state.errors.emailid}</div>
+                      <div className="passerror">
+                        {this.state.errors.emailid}
+                      </div>
                     </div>
-                  </div>
-                  <div className="form-row">
-                    <div className="col-lg-7">
+                    <div className="col-lg-6">
                       <input
                         type="password"
                         className="form-control my-4 p-2"
@@ -179,28 +173,31 @@ export default class Signup extends React.Component {
                         value={this.state.fields.password}
                         onChange={this.handleChange}
                       />
-                      <div className="passerror">{this.state.errors.password}</div>
+                      <div className="passerror">
+                        {this.state.errors.password}
+                      </div>
                     </div>
+                    {/* <div className="col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control my-4 p-2"
+                        placeholder="Confirm Password"
+                        required
+                      />
+                    </div> */}
                   </div>
-                  {/* <div className="form-row">
-                                    <div className="col-lg-7">
-                                        <input type="text" class="form-control my-4 p-2" placeholder="Confirm Password" value={this.state.confirmpassword}  onChange={(event)=>this.setState({confirmpassword:event.target.value})}/>
-                                        <p className="Error">{this.state.confirmpasswordError}</p>
-                                    </div>
-                                </div> */}
 
                   <div className="form-row">
-                    <div className="col-lg-7 my-3 p-2" />
+                    <div className="col-lg-6 my-1 p-1" />
                     <button
-                      className="btncontinue"
+                      className="btnsign"
                       onClick={() => this.onhandleclick()}
                     >
                       Continue
                     </button>
                   </div>
 
-                  <Link to="/login" className="existinglin">
-                    {" "}
+                  <Link to="/login" class="asign">
                     Existing User? Log In
                   </Link>
                 </form>

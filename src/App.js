@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid } from "@material-ui/core";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -10,12 +11,7 @@ import HomePage from "./Components/HomePage.js";
 import HeaderComponent from "./Components/HeaderComponents.js";
 import FooterComponents from "./Components/FooterComponents.js";
 import AboutYourSelf from "./Components/AboutyourselfComponents";
-//import "./styles/logsign.scss";
-import "./styles/login.scss";
-import "./styles/signup.scss";
-import "./styles/forgot.scss";
-import "./styles/header.scss"
-import ForgotPassword from "./Components/ForgotPassword";
+import forgotpassward from "./Components/Forgot Password";
 import AddToCard from "./Components/AddToCard";
 import LogoComponent from "./Components/LogoComponents.js";
 
@@ -61,7 +57,7 @@ function App() {
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Signup} />
        
-        <Route exact path="/forgot" component={ForgotPassword} />
+        <Route exact path="/forgot" component={forgotpassward} />
         <FooterComponents />
       </Router>
     </div>

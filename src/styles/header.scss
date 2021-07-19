@@ -9,7 +9,7 @@
 // }
 // .phone {
 //   font-size: 15px;
- 
+
 // }
 // .loginlink {
 //   color: white;
@@ -51,43 +51,33 @@
 //   font-size: 15px;
 // }
 
-
-
-
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.phone
-{
-   margin-top: -3.5%;
-   margin-left: -3%;
-} 
-.navbar-brand
-{
+.phone {
+  margin-top: -3.5%;
+  margin-left: -3%;
+}
+.navbar-brand {
   margin-left: -5%;
   font-size: 15px;
   margin-top: -1%;
 }
-.envelope
-{
+.envelope {
   left: 10%;
   margin-top: 2%;
 }
-.email
-{
+.email {
   text-decoration: none;
   color: white;
   font-size: 17px;
-   cursor: pointer;
+  cursor: pointer;
   margin-top: 1%;
   margin-left: 30px;
-  
 }
-.navbar
-{
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -95,20 +85,17 @@
   background-color: blue;
   color: white;
 }
-.logo
-{
+.logo {
   font-size: 30px;
 }
-.nav-links
-{
+.nav-links {
   display: flex;
   justify-content: flex-end;
   list-style: none;
   width: 75%;
 }
 .home,
-.about
-{
+.about {
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -116,29 +103,25 @@
   margin: 10px 10px;
   cursor: pointer;
   margin-top: -1%;
- 
- 
 }
 .cart {
-    margin-left: 4%;
-    margin-top: 3%;
-    height: 30px;
-    width: 30px;
-  }
-  
-  .addspan {
-    position: absolute;
-    right: 45px;
-    z-index: 1;
-    top: 2px;
-    background-color: red;
-    width: 21px;
-    border-radius: 50%;
-    display: inline-block;
-    color: white;
-    height: 20px;
-    text-align: center;
-    font-size: 15px;
-  }
-  
-  
+  margin-left: 4%;
+  margin-top: 3%;
+  height: 30px;
+  width: 30px;
+}
+
+.addspan {
+  position: absolute;
+  right: 45px;
+  z-index: 1;
+  top: 2px;
+  background-color: red;
+  width: 21px;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  height: 20px;
+  text-align: center;
+  font-size: 15px;
+}
