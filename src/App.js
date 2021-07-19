@@ -7,6 +7,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import Login from "./Components/login.js";
 import Signup from "./Components/Signup.js";
 import HomePage from "./Components/HomePage.js";
+
 import HeaderComponent from "./Components/HeaderComponents.js";
 import FooterComponents from "./Components/FooterComponents.js";
 import AboutYourSelf from "./Components/AboutyourselfComponents";
@@ -17,6 +18,7 @@ import "./styles/forgot.scss";
 import "./styles/header.scss"
 import ForgotPassword from "./Components/ForgotPassword";
 import AddToCard from "./Components/AddToCard";
+import LogoComponent from "./Components/LogoComponents.js";
 
 // class App extends React.Component {
 
@@ -59,6 +61,7 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Signup} />
+       
         <Route exact path="/forgot" component={ForgotPassword} />
         <FooterComponents />
       </Router>

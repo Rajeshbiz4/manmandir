@@ -17,7 +17,7 @@ class ForgotPassword extends React.Component {
                             <img src={Logo} className="container-fluid" />
                             <div className="signupdiv">Forgot Password</div>
                             <hr className="solid" />
-                            <p className="psignup">If you have forgotten your <br/> password, we can send a <br/>verification code on your<br/> mobile number to reset it.</p>
+                            <div className="psignup">If you have forgotten your <br/> password, we can send a <br/>verification code on your<br/> mobile number to reset it.</div>
                         </div>
                         <div className="col-lg-7">
                         

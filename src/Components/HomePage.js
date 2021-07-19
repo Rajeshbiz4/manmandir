@@ -23,6 +23,7 @@ import "../styles/signup.scss"
 import "../styles/header.scss"
 import "../styles/card.scss"
 import "../styles/categories.scss"
+import "../styles/navbar2.scss"
 
 
 

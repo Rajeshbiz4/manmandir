@@ -110,13 +110,13 @@ export default class Signup extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-5">
-                <img src={Logo} class="container-fluid" />
+               <Link to="/"><img src={Logo} class="container-fluid" /></Link>
                 <div className="signupdiv">Sign Up</div>
                 <hr className="solid" />
-                <p className="psignup">
+                <div className="psignup">
                   We do not share your <br /> personal details with <br />{" "}
                   anyone
-                </p>
+                </div>
               </div>
               <div className="col-lg-7">
                 <form

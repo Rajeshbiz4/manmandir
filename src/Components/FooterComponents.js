@@ -9,7 +9,7 @@ export default class FooterComponents extends React.Component {
     return (
       <nav
         className="navbar navbar-expand-sm  text-light bg-primary"
-        style={{ padding: "1px 1px", height: "30px", marginTop: "-2%" }}
+        style={{ padding: "1px 1px", height: "30px", marginTop: "2%" }}
       >
         <div
           className="footer-copyright text-center py-3"

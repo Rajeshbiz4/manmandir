@@ -50,6 +50,10 @@ class Login extends React.Component {
       formIsValid = false;
       errors["mobileno"] = "*Please enter your mobile no.";
     }
+    else
+    {
+      errors["mobileno"] = " ";
+    }
    if (typeof fields["mobileno"] !== "undefined") {
       if (!fields["mobileno"].match(/^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/)) {
         formIsValid = false;
@@ -83,15 +87,15 @@ class Login extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-5">
-                <img src={Logo} class="container-fluid" />
+              <Link to="/"><img src={Logo} class="container-fluid" /></Link>
                 <div className="loginin">Log In</div>
                 <hr className="solid" />
-                <p className="loginp">
+                <div className="loginp">
                   Get access to your
                   <br />
                   Orders, Wishlist and <br />
                   Recommendations.
-                </p>
+                </div>
               </div>
               <div className="col-lg-7">
                 <h1>Login</h1>
