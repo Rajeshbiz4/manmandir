@@ -7,7 +7,6 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import Login from "./Components/login.js";
 import Signup from "./Components/Signup.js";
 import HomePage from "./Components/HomePage.js";
-
 import HeaderComponent from "./Components/HeaderComponents.js";
 import FooterComponents from "./Components/FooterComponents.js";
 import AboutYourSelf from "./Components/AboutyourselfComponents";
