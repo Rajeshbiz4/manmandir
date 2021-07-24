@@ -13,6 +13,7 @@ import FooterComponents from "./Components/FooterComponents.js";
 import AboutYourSelf from "./Components/AboutyourselfComponents";
 import forgotpassward from "./Components/Forgot Password";
 import AddToCard from "./Components/AddToCard";
+import LogoComponent from "./Components/LogoComponents.js";
 
 // class App extends React.Component {
 
@@ -50,22 +51,15 @@ import AddToCard from "./Components/AddToCard";
 function App() {
   return (
     <div>
-      <Grid>
-        <Router>
-          <Grid item xs={12}>
-            {" "}
-            <HeaderComponent />
-          </Grid>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/signup" component={Signup} />
-          <Route path="/Forgot passward" component={forgotpassward} />
-          <Grid item xs={12}>
-            {" "}
-            <FooterComponents />
-          </Grid>
-        </Router>
-      </Grid>
+      <Router>
+        <HeaderComponent />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={Signup} />
+       
+        <Route exact path="/forgot" component={forgotpassward} />
+        <FooterComponents />
+      </Router>
     </div>
   );
 }

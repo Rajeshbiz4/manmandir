@@ -14,25 +14,38 @@
   background-color: rgb(59, 56, 233);
   color: white;
   height: 40px;
-  width: 52%;
-  margin-left: -1%;
+  width: 60%;
+  margin-left: 5%;
   border-radius: 2px;
-  margin-top: -10%;
+  margin-top: 2%;
+  font-size: 15px;
+}
+.btnlogin:hover {
+  background-color: crimson;
+  border-radius: 10px;
+  border-color: crimson;
 }
 
 .btn {
   background-color: rgb(59, 56, 233);
   color: white;
   height: 40px;
-  width: 110%;
-  margin-left: -5%;
-  border-radius: 4px;
-  margin-top: -6%;
+  width: 60%;
+  margin-left: 5%;
+  border-radius: 2px;
+  margin-top: -5%;
+  font-size: 15px;
+}
+.btnotp:hover {
+  background-color: crimson;
+  border-radius: 10px;
+  border-color: crimson;
 }
 input[type="text"],
 input[type="password"] {
   border: none;
   border-bottom: 2px solid gray;
+  margin-left: 5%;
 }
 input:focus {
   outline: none;
@@ -40,14 +53,15 @@ input:focus {
 .alogin {
   margin-left: 4%;
   font-size: 20px;
-  margin-top: 4%;
-}
-.forgotpass {
-  font-size: 20px;
-  margin-top: 4%;
+  color: blue;
+  margin-top: -10%;
+  margin-left: 5%;
 }
 .forgot {
-  margin-top: -10%;
+  margin-top: 5%;
+  color: blue;
+  margin-left: 9%;
+  font-size: 15px;
 }
 .login1 {
   margin-top: 7%;
@@ -62,7 +76,8 @@ input:focus {
 }
 
 .line {
-  margin-left: 25%;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 .line1 {
   margin-right: 7%;
@@ -77,4 +92,9 @@ input:focus {
   font-size: 11px;
   color: red;
   margin-top: -10px;
+}
+.signin {
+  margin-top: -20px;
+  margin-left: 7%;
+  font-size: 30px;
 }

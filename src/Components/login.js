@@ -84,21 +84,15 @@ export default class Login extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-5">
-                <Link to="/">
-                  {" "}
-                  <img src={Logo} class="mandirimage1" />
-                </Link>
-                <div className="login1">Log In</div>
-
-                <div className="line">
-                  _____________________________________
-                </div>
-                <p className="p1">
+              <Link to="/"><img src={Logo} class="container-fluid" /></Link>
+                <div className="loginin">Log In</div>
+                <hr className="solid" />
+                <div className="loginp">
                   Get access to your
                   <br />
                   Orders, Wishlist and <br />
                   Recommendations.
-                </p>
+                </div>
               </div>
               <div className="col-lg-7">
                 <h1>Login</h1>

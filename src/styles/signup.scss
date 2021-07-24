@@ -12,11 +12,17 @@
 .btnsign {
   background-color: rgb(59, 56, 233);
   color: white;
-  height: 40px;
-  width: 52%;
-  margin-left: -1%;
-  border-radius: 2px;
-  margin-top: -10%;
+  height: 50px;
+  width: 60%;
+  margin-left: 6%;
+  border-radius: 4px;
+  margin-top: -8%;
+  font-size: 15px;
+}
+.btncontinue:hover {
+  background-color: crimson;
+  border-radius: 10px;
+  border-color: crimson;
 }
 
 input[type="text"] {
@@ -42,6 +48,12 @@ input:focus {
   color: blue;
   font-size: 20px;
   margin-left: 25%;
+}
+.existinglin {
+  font-size: 20px;
+  color: blue;
+  margin-top: -5%;
+  margin-left: 7%;
 }
 .passerror {
   font-size: 11px;

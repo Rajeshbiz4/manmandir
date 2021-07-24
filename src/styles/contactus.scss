@@ -1,12 +1,9 @@
-// contact page//
-.contactcontainer {
+.blockquote2 {
   background-image: url("../assets/Images/Blue-Design-Abstract.jpg");
-  // background-color: blue;
   height: 100%;
-  width: 117%;
-  padding: 20px 20px 50px 50px;
-  margin-top: 1%;
-  margin-left: -8.5%;
+  width: 100%;
+  padding: 20px 20px 50px 0px;
+  margin-top: -8%;
 }
 .heading2 {
   color: white;
@@ -20,10 +17,20 @@
   margin-left: 7%;
   margin-top: 2%;
 }
+.logo {
+  height: 10%;
+  width: 10%;
+  margin-left: 80%;
+}
+.logo1 {
+  height: 10%;
+  width: 10%;
+  margin-left: 80%;
+}
 .demo3 {
   border: 10px solid red;
-  margin-top: -1%;
-  height: 100%;
+  margin-top: "-100%";
+  height: 100px;
   width: 100%;
   background-color: red;
 }
